@@ -7,8 +7,8 @@
     </metaData>
     <data>
       <properties>
-        <property name="Title" type="string">AnderolFindProduct</property>
-        <property name="Description" type="string">My Visual Web Part</property>
+        <property name="Title" type="string">Anderol Find Product</property>
+        <property name="Description" type="string">Anderol Find Product web part is use to filter all the products.</property>
         <property name="ChromeType" type="chrometype">None</property>
         <Property Name="Group" Value="Anderol" />
       </properties>
