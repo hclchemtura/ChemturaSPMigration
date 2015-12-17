@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="AnderolCustomFiles" Url="Style Library">
+    <File Path="AnderolCustomFiles\Scripts\jquery.selectbox-0.1.3.js" Url="AnderolCustomFiles/Scripts/jquery.selectbox-0.1.3.js" Type="GhostableInLibrary" ReplaceContent="True"/>
+    <File Path="AnderolCustomFiles\Scripts\jquery-1.7.2.min.js" Url="AnderolCustomFiles/Scripts/jquery-1.7.2.min.js" Type="GhostableInLibrary" ReplaceContent="True" />
+    <File Path="AnderolCustomFiles\Styles\AnderolProducts.css" Url="AnderolCustomFiles/Styles/AnderolProducts.css" Type="GhostableInLibrary" ReplaceContent="True" />
+  </Module>
+</Elements>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="AnderolNewsUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="AnderolNews\" Type="ElementManifest" />
+    <ProjectItemFile Source="AnderolNews.webpart" Target="AnderolNews\" Type="ElementFile" />
+    <ProjectItemFile Source="AnderolNewsUserControl.ascx" Target="CONTROLTEMPLATES\ChemturaSP.CustomWebParts\AnderolNews\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="ChemturaSP.CustomWebParts.AnderolNews" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

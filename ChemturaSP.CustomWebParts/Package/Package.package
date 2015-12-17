@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="34dee08b-870a-4b45-83e0-2cb93d1e055e" solutionId="34dee08b-870a-4b45-83e0-2cb93d1e055e" resetWebServer="false" sharePointProductVersion="15.0" name="ChemturaSP.CustomWebParts" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="738dc15f-d551-4726-b6ef-e27e04911c21" />
+  </features>
+</package>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="AnderolProductDetailUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="AnderolProductDetail\" Type="ElementManifest" />
+    <ProjectItemFile Source="AnderolProductDetail.webpart" Target="AnderolProductDetail\" Type="ElementFile" />
+    <ProjectItemFile Source="AnderolProductDetailUserControl.ascx" Target="CONTROLTEMPLATES\ChemturaSP.CustomWebParts\AnderolProductDetail\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="ChemturaSP.CustomWebParts.AnderolProductDetail" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AABD75DE-2C49-437C-A5AE-C3A786F97917}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChemturaSP.CustomWebParts</RootNamespace>
+    <AssemblyName>ChemturaSP.CustomWebParts</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnderolApplicationProducts\AnderolApplicationProducts.cs" />
+    <Compile Include="AnderolApplicationProducts\AnderolApplicationProductsUserControl.ascx.cs">
+      <DependentUpon>AnderolApplicationProductsUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AnderolApplicationProducts\AnderolApplicationProductsUserControl.ascx.designer.cs">
+      <DependentUpon>AnderolApplicationProductsUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnderolApplications\AnderolApplications.cs" />
+    <Compile Include="AnderolApplications\AnderolApplicationsUserControl.ascx.cs">
+      <DependentUpon>AnderolApplicationsUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AnderolApplications\AnderolApplicationsUserControl.ascx.designer.cs">
+      <DependentUpon>AnderolApplicationsUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnderolFindProduct\AnderolFindProduct.ascx.cs">
+      <DependentUpon>AnderolFindProduct.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AnderolFindProduct\AnderolFindProduct.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnderolFindProduct.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AnderolNews\AnderolNews.cs" />
+    <Compile Include="AnderolNews\AnderolNewsUserControl.ascx.cs">
+      <DependentUpon>AnderolNewsUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AnderolNews\AnderolNewsUserControl.ascx.designer.cs">
+      <DependentUpon>AnderolNewsUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnderolProductDetail\AnderolProductDetail.cs" />
+    <Compile Include="AnderolProductDetail\AnderolProductDetailUserControl.ascx.cs">
+      <DependentUpon>AnderolProductDetailUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AnderolProductDetail\AnderolProductDetailUserControl.ascx.designer.cs">
+      <DependentUpon>AnderolProductDetailUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AnderolApplicationProducts\AnderolApplicationProducts.webpart" />
+    <None Include="AnderolApplicationProducts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c55a7ffb-c4c0-44f2-92bd-2053c474456d}</SharePointProjectItemId>
+    </None>
+    <None Include="AnderolApplications\AnderolApplications.webpart" />
+    <None Include="AnderolApplications\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3394432f-a320-4e72-a323-7615a2c18e43}</SharePointProjectItemId>
+    </None>
+    <None Include="AnderolCustomFiles\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{60fa2a92-cbdd-4d48-b294-e7203edac58c}</SharePointProjectItemId>
+    </None>
+    <None Include="AnderolFindProduct\AnderolFindProduct.webpart" />
+    <None Include="AnderolFindProduct\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{17ce10e3-9646-45e0-a7ef-eed2676058d6}</SharePointProjectItemId>
+    </None>
+    <None Include="AnderolNews\AnderolNews.webpart" />
+    <None Include="AnderolNews\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3a3fb4c8-e87f-4bce-8f2b-1ce8b8a9d80c}</SharePointProjectItemId>
+    </None>
+    <None Include="AnderolProductDetail\AnderolProductDetail.webpart" />
+    <None Include="AnderolProductDetail\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{dc847d1c-57d7-4f36-b3ba-db4df135e626}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\AnderolCustomWebParts\AnderolCustomWebParts.feature">
+      <FeatureId>{738dc15f-d551-4726-b6ef-e27e04911c21}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{34dee08b-870a-4b45-83e0-2cb93d1e055e}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AnderolCustomFiles\Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AnderolApplicationProducts\AnderolApplicationProductsUserControl.ascx" />
+    <Content Include="AnderolApplicationProducts\Elements.xml" />
+    <Content Include="AnderolApplications\AnderolApplicationsUserControl.ascx" />
+    <Content Include="AnderolApplications\Elements.xml" />
+    <Content Include="AnderolCustomFiles\Elements.xml" />
+    <Content Include="AnderolCustomFiles\Scripts\jquery-1.7.2.min.js" />
+    <Content Include="AnderolCustomFiles\Scripts\jquery.selectbox-0.1.3.js" />
+    <Content Include="AnderolCustomFiles\Styles\AnderolProducts.css" />
+    <Content Include="AnderolFindProduct\AnderolFindProduct.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>AnderolFindProduct.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="AnderolFindProduct\Elements.xml" />
+    <Content Include="AnderolNews\AnderolNewsUserControl.ascx" />
+    <Content Include="AnderolNews\Elements.xml" />
+    <Content Include="AnderolProductDetail\AnderolProductDetailUserControl.ascx" />
+    <Content Include="AnderolProductDetail\Elements.xml" />
+    <Content Include="Features\AnderolCustomWebParts\AnderolCustomWebParts.Template.xml">
+      <DependentUpon>AnderolCustomWebParts.feature</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>
