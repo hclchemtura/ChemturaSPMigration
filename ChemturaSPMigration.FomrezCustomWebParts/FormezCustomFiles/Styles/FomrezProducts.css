@@ -1,0 +1,180 @@
+/* PRODUCT SELECTOR */
+#productSelectorWrapper {
+	width: 940px;
+	float: left;
+	margin: 10px 0 0 0;
+}
+#productSelectorWrapper .productSelector {
+	width: 300px;
+	float: left;
+	background: #231f20 url(/corporatev2/chemturav8/layout/Anderol-en-US/background_grid.png) repeat;
+	padding: 0 0 20px 0;
+	margin: 0 40px 0 0;
+	color: transparent;
+}
+
+#productSelectorWrapper .productSelector h3 {
+	color:#ffffff;
+	font-size:1.2em;
+	font-weight:bold;
+	line-height:1.2em;
+	margin: 0 0 .3em 0;
+	background: #231f20 url(/corporatev2/chemturav8/layout/Anderol-en-US/background_gridWithShadow.png) repeat-x bottom;
+	padding: 1em .5em 1.5em .5em;
+}
+
+#productSelectorWrapper .productSelector h4 {
+	color:#ffffff;
+	font-size:1.1em;
+	margin: .3em 0;
+	padding: .3em 1em;
+	font-weight:normal;
+}
+
+#productSelectorWrapper .productSelector hr {
+	width: 90%;
+	color: #ffffff;
+}
+
+#productSelectorWrapper .productSelector select {
+	border:1px solid #848484;
+	font-size: 1.1em;
+	line-height:1.5em;
+	margin: 0 0 .5em 1em;
+	width:90%;
+}
+
+#productSelectorWrapper .productSelector input {
+    border: 1px solid #848484;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    height: 1.5em;
+    margin: 0 0 0.5em 1em;
+    width: 90%;
+    color: #646464;
+    text-indent: 3px;
+}
+
+#productSelectorWrapper .productSelector #reset {
+	width: 150px; 
+	height: 32px; 
+	float: left; 
+	padding: 3px 0; 
+	margin: 10px 0 0 75px;
+	background: -moz-linear-gradient(top, #6EC82D 0%, #4b9714 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6EC82D), color-stop(100%,#4b9714)); /* webkit */
+	*background: #6EC82D;
+	color:#ffffff;
+	cursor: pointer;
+	border-radius:6px;
+}
+
+#productSelectorWrapper .productSelector #reset:hover {
+	background: -moz-linear-gradient(top, #009ADA 0%, #004c7b 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#009ADA), color-stop(100%,#004c7b)); /* webkit */
+	*background: #009ADA;
+}
+
+#productSelectorWrapper .allProducts {
+	width: 600px;
+	float: left;
+	background: transparent;
+	padding: 0;
+}
+
+#productSelectorWrapper .allProducts .result {
+	margin: .5em 0;
+	width: 50%;
+	float:left;
+}
+
+#productSelectorWrapper .allProducts h3 {
+	color:#ffffff;
+	background: #231f20 url(/corporatev2/chemturav8/layout/Anderol-en-US/background_grid.png) repeat-x bottom;
+	font-size:1.2em;
+	line-height:2em;
+	font-weight:bold;
+	padding:0;
+	margin: 0;
+	text-indent: .5em;
+}
+
+#productSelectorWrapper .allProducts h4 {
+	color:#414141;
+	font-size:1.1em;
+	line-height: 1.6em;
+	padding: 0;
+	margin: 0 1.5em 0 .5em;
+	font-weight:normal;
+}
+
+#productSelectorWrapper .selectorResults {
+	width: 600px;
+	float: left;
+	background: #fff;
+	padding: 0;
+	position:relative;
+}
+
+#productSelectorWrapper .selectorResults h3 {
+	color:#ffffff;
+	width:100%;
+	float:left;
+	font-size:1.2em;
+	line-height:1.2em;
+	font-weight:bold;
+	text-indent: .5em;
+	line-height:2em;
+	background: #231f20 url(/corporatev2/chemturav8/layout/Anderol-en-US/background_grid.png) repeat;
+}
+
+#productSelectorWrapper .selectorResults .pagination {
+	color:#ffffff;
+	width:98%;
+	text-align:right;
+	position: absolute;
+	top: .2em;
+	left:0;
+	font-size: .9em;
+}
+
+#productSelectorWrapper .selectorResults .pagination button {
+	background:transparent;
+	margin:0;
+	padding: 0 .2em;
+	padding: 0 .5em \9;
+	border:none;
+	cursor:pointer;
+	font-size: .9em;
+	color:#009ADA;
+	vertical-align: bottom;
+	border:0 \9;
+	text-decoration:underline;
+    min-width:auto;
+}
+
+#productSelectorWrapper .selectorResults .result {
+	margin: 0;
+	width:100%;
+	float:left;
+	margin: .5em 0;
+	border-bottom:1px dashed #848484;
+}
+
+#productSelectorWrapper .selectorResults .result h4 {
+	font-size: 1.1em;
+	line-height: 1.4em;
+	font-weight:normal;
+	padding: 0 0 0 .5em;
+	margin: 0;
+}
+
+#productSelectorWrapper .selectorResults .result a {
+	
+}
+
+#productSelectorWrapper .selectorResults .result p {
+	font-size: .9em;
+	line-height: 1.2em;
+	padding: 0 0 0 .5em;
+}

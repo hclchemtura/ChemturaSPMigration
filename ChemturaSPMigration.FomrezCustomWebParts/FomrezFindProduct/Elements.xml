@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="FomrezFindProduct" List="113" Url="_catalogs/wp">
+    <File Path="FomrezFindProduct\FomrezFindProduct.webpart" Url="ChemturaSPMigration.FomrezCustomWebParts_FomrezFindProduct.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="FomrezCustomWebParts" />
+    </File>
+  </Module>
+</Elements>

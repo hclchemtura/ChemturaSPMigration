@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{78D30CAA-2F34-4281-A5B2-5C955D50E47D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChemturaSPMigration.FomrezCustomWebParts</RootNamespace>
+    <AssemblyName>ChemturaSPMigration.FomrezCustomWebParts</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Recaptcha, Version=1.0.5.0, Culture=neutral, PublicKeyToken=9afc4d65b28c38c2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\pg\Recaptcha.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FomrezContactUs\FomrezContactUs.cs" />
+    <Compile Include="FomrezContactUs\FomrezContactUsUserControl.ascx.cs">
+      <DependentUpon>FomrezContactUsUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FomrezContactUs\FomrezContactUsUserControl.ascx.designer.cs">
+      <DependentUpon>FomrezContactUsUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FomrezFindProduct\FomrezFindProduct.ascx.cs">
+      <DependentUpon>FomrezFindProduct.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="FomrezFindProduct\FomrezFindProduct.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FomrezFindProduct.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="FomrezNews\FomrezNews.cs" />
+    <Compile Include="FomrezNews\FomrezNewsUserControl.ascx.cs">
+      <DependentUpon>FomrezNewsUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FomrezNews\FomrezNewsUserControl.ascx.designer.cs">
+      <DependentUpon>FomrezNewsUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FomrezProdAppDetail\FomrezProdAppDetail.cs" />
+    <Compile Include="FomrezProdAppDetail\FomrezProdAppDetailUserControl.ascx.cs">
+      <DependentUpon>FomrezProdAppDetailUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FomrezProdAppDetail\FomrezProdAppDetailUserControl.ascx.designer.cs">
+      <DependentUpon>FomrezProdAppDetailUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FomrezProdByAppType\FomrezProdByAppType.cs" />
+    <Compile Include="FomrezProdByAppType\FomrezProdByAppTypeUserControl.ascx.cs">
+      <DependentUpon>FomrezProdByAppTypeUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FomrezProdByAppType\FomrezProdByAppTypeUserControl.ascx.designer.cs">
+      <DependentUpon>FomrezProdByAppTypeUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FomrezProductDetail\FomrezProductDetail.cs" />
+    <Compile Include="FomrezProductDetail\FomrezProductDetailUserControl.ascx.cs">
+      <DependentUpon>FomrezProductDetailUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FomrezProductDetail\FomrezProductDetailUserControl.ascx.designer.cs">
+      <DependentUpon>FomrezProductDetailUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductsApplicationTypes\ProductsApplicationTypes.cs" />
+    <Compile Include="ProductsApplicationTypes\ProductsApplicationTypesUserControl.ascx.cs">
+      <DependentUpon>ProductsApplicationTypesUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductsApplicationTypes\ProductsApplicationTypesUserControl.ascx.designer.cs">
+      <DependentUpon>ProductsApplicationTypesUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\FomrezCustomWebParts\FomrezCustomWebParts.feature">
+      <FeatureId>{ef5d72f7-67b0-4a73-b5ca-204bb00d611a}</FeatureId>
+    </None>
+    <None Include="FomrezContactUs\FomrezContactUs.webpart" />
+    <None Include="FomrezContactUs\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{76d698b6-beca-470c-849f-fd3bc456de9d}</SharePointProjectItemId>
+    </None>
+    <None Include="FomrezFindProduct\FomrezFindProduct.webpart" />
+    <None Include="FomrezFindProduct\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{382ab2a9-3770-4ee4-b4f8-260a9f0ca77b}</SharePointProjectItemId>
+    </None>
+    <None Include="FomrezNews\FomrezNews.webpart" />
+    <None Include="FomrezNews\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6281d554-7e17-4ed6-94fd-718326354a92}</SharePointProjectItemId>
+    </None>
+    <None Include="FomrezProdAppDetail\FomrezProdAppDetail.webpart" />
+    <None Include="FomrezProdAppDetail\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{89d19746-2d6b-4d8a-990f-3b4b6ebb5e66}</SharePointProjectItemId>
+    </None>
+    <None Include="FomrezProdByAppType\FomrezProdByAppType.webpart" />
+    <None Include="FomrezProdByAppType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{367c9f4b-c9ba-4bdd-ab69-c67a43df457f}</SharePointProjectItemId>
+    </None>
+    <None Include="FomrezProductDetail\FomrezProductDetail.webpart" />
+    <None Include="FomrezProductDetail\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9cdcd4ac-16da-49b5-a9d3-3e7bc8149c32}</SharePointProjectItemId>
+    </None>
+    <None Include="FormezCustomFiles\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3eef38da-59c5-454a-a321-5a37fcc21ab2}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{6491a566-97e1-41c8-9572-50d88b49d524}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="ProductsApplicationTypes\ProductsApplicationTypes.webpart" />
+    <None Include="ProductsApplicationTypes\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1ec367b8-6975-4267-8e82-e35f20939ea4}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Features\FomrezCustomWebParts\FomrezCustomWebParts.Template.xml">
+      <DependentUpon>FomrezCustomWebParts.feature</DependentUpon>
+    </Content>
+    <Content Include="FomrezContactUs\Elements.xml" />
+    <Content Include="FomrezContactUs\FomrezContactUsUserControl.ascx" />
+    <Content Include="FomrezFindProduct\Elements.xml" />
+    <Content Include="FomrezFindProduct\FomrezFindProduct.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>FomrezFindProduct.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="FomrezNews\Elements.xml" />
+    <Content Include="FomrezNews\FomrezNewsUserControl.ascx" />
+    <Content Include="FomrezProdAppDetail\Elements.xml" />
+    <Content Include="FomrezProdAppDetail\FomrezProdAppDetailUserControl.ascx" />
+    <Content Include="FomrezProdByAppType\Elements.xml" />
+    <Content Include="FomrezProdByAppType\FomrezProdByAppTypeUserControl.ascx" />
+    <Content Include="FomrezProductDetail\Elements.xml" />
+    <Content Include="FomrezProductDetail\FomrezProductDetailUserControl.ascx" />
+    <Content Include="FormezCustomFiles\Elements.xml" />
+    <Content Include="FormezCustomFiles\Images\adhesives.jpg" />
+    <Content Include="FormezCustomFiles\Images\castElastomers.jpg" />
+    <Content Include="FormezCustomFiles\Images\Coatings.jpg" />
+    <Content Include="FormezCustomFiles\Images\Foam.jpg" />
+    <Content Include="FormezCustomFiles\Images\Pigments.jpg" />
+    <Content Include="FormezCustomFiles\Images\sm_pdf.jpg" />
+    <Content Include="FormezCustomFiles\Images\TPU.jpg" />
+    <Content Include="FormezCustomFiles\Scripts\jquery-1.7.2.min.js" />
+    <Content Include="FormezCustomFiles\Scripts\jquery.selectbox-0.1.3.js" />
+    <Content Include="FormezCustomFiles\Styles\FomrezProdByAppType.css" />
+    <Content Include="FormezCustomFiles\Styles\FomrezProdAppDetail.css" />
+    <Content Include="FormezCustomFiles\Styles\FomrezAppTypes.css" />
+    <Content Include="FormezCustomFiles\Styles\FomrezProducts.css" />
+    <Content Include="ProductsApplicationTypes\Elements.xml" />
+    <Content Include="ProductsApplicationTypes\ProductsApplicationTypesUserControl.ascx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

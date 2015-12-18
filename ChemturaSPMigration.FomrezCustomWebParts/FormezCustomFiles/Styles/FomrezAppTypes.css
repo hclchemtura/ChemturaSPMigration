@@ -1,0 +1,29 @@
+.featureAreaStandardWrapper {
+    width: 520px;
+    float: left;
+    margin: 10px 0;
+}
+.featureAreaStandardWrapper .featureAreaStandardItem .image {
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 120px;
+}
+a {
+    color: #009ada;
+    background: transparent;
+}
+.featureAreaStandardWrapper .featureAreaStandardItem .image img {
+    width: 120px;
+}
+.featureAreaStandardWrapper .featureAreaStandardItem .title a {
+    text-decoration: none;
+}
+.featureAreaStandardWrapper .featureAreaStandardItem .body {
+    float: left;
+    width: 390px;
+    margin: 0 0 20px 0;
+}
+.featureAreaStandardWrapper .featureAreaStandardItem .body p {
+    padding: .2em 0;
+    line-height: 1.2em;
+}

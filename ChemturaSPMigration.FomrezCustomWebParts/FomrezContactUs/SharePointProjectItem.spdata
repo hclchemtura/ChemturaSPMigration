@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="FomrezContactUsUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="FomrezContactUs\" Type="ElementManifest" />
+    <ProjectItemFile Source="FomrezContactUs.webpart" Target="FomrezContactUs\" Type="ElementFile" />
+    <ProjectItemFile Source="FomrezContactUsUserControl.ascx" Target="CONTROLTEMPLATES\ChemturaSPMigration.FomrezCustomWebParts\FomrezContactUs\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="ChemturaSPMigration.FomrezCustomWebParts.FomrezContactUs" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

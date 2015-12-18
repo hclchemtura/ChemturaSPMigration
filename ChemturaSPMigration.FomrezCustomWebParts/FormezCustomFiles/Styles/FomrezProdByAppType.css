@@ -1,0 +1,170 @@
+#productSelectorWrapper {
+	width: 940px;
+	float: left;
+	margin: 0;
+	padding: 0 0 40px 0;
+}
+#productSelectorWrapper .productSelector {
+	width: 100%;
+	float: left;
+	background: #231f20 url(/corporatev2/chemturav8/layout/Fomrez-en-US/background_grid.png) repeat;
+	padding: 0;
+	margin: 0;
+	color: #fff;
+	height: 40px;
+}
+
+#productSelectorWrapper .productSelector h3 {
+	color:#ffffff;
+	font-size:18px;
+	font-weight:bold;
+	line-height:40px;
+	margin: 0 0 0 10px;
+	padding: 0;
+	width: 190px;
+	float:left;
+}
+
+#productSelectorWrapper .productSelector h4 {
+	color:#ffffff;
+	font-size:12px;
+	font-weight:normal;
+	line-height:25px;
+	text-align:right;
+	margin: 15px 0 0 0;
+	padding: 0;
+	width: 150px;
+	float:left;
+}
+
+#productSelectorWrapper .productSelector select {
+	border:1px solid #848484;
+	font-size: 12pxem;
+	line-height:14px;
+	margin: 0;
+	float:left;
+	width: 235px;
+	margin:15px 5px 0 5px;
+}
+
+#productSelectorWrapper .productSelector .pagination {
+	color:#ffffff;
+	width:100px;
+	float:left;
+	font-size: 11px;
+	line-height: 25px;
+	margin: 15px 0 0 0 !important;
+	text-align:center;
+}
+
+#productSelectorWrapper .productSelector .pagination button {
+	background:transparent;
+	margin:0;
+	padding: 0;
+	border:none;
+	cursor:pointer;
+	font-size: 12px;
+	color:#009ADA;
+	border:0 \9;
+	text-decoration:underline;
+}
+
+#productSelectorWrapper .allProducts {
+	width: 600px;
+	float: left;
+	background: transparent;
+	padding: 0;
+}
+
+#productSelectorWrapper .allProducts .result {
+	margin: .5em 0;
+	width: 50%;
+	float:left;
+}
+
+#productSelectorWrapper .allProducts h3 {
+	color:#6dc82b;
+	background: #231f20 url(/corporatev2/chemturav8/layout/Fomrez-en-US/background_gridWithShadow.png) repeat-x bottom;
+	font-size:1.2em;
+	line-height:1.2em;
+	font-weight:bold;
+	padding:.5em 0 0 0;
+	margin: 0 0 .5em 0;
+}
+
+#productSelectorWrapper .allProducts h4 {
+	color:#414141;
+	font-size:1.1em;
+	margin: 0;
+	padding: 0 1em;
+	font-weight:normal;
+}
+
+#productSelectorWrapper .selectorResults {
+	width: 600px;
+	float: left;
+	background: #fff;
+	padding: 0;
+	position:relative;
+}
+
+#productSelectorWrapper .selectorResults h3 {
+	color:#ffffff;
+	width:100%;
+	float:left;
+	font-size:1.2em;
+	line-height:1.2em;
+	font-weight:bold;
+	text-indent: .5em;
+	line-height:2em;
+	background: #231f20 url(/corporatev2/chemturav8/layout/Fomrez-en-US/background_grid.png) repeat;
+}
+
+#productSelectorWrapper .selectorResults .result {
+	margin: 0;
+	width:100%;
+	float:left;
+	margin: 2px 0;
+}
+#productSelectorWrapper .selectorResults .result table {
+	width: 940px;
+	border-top: 2px solid #999;
+}
+
+#productSelectorWrapper .selectorResults .result tr {
+	
+}
+
+#productSelectorWrapper .selectorResults .result th {
+	background: #e1e1e1;	
+	line-height: 28px;
+	font-size: 12px;
+	font-weight:bold;
+	border: 1px solid #fff;
+	text-align:left;
+	padding: 0 5px 0 5px;
+}
+#productSelectorWrapper .selectorResults .result .product {
+	width: 150px;
+}
+#productSelectorWrapper .selectorResults .result .category {
+	width: 220px;
+}
+#productSelectorWrapper .selectorResults .result .description {
+	width: 330px;
+}
+#productSelectorWrapper .selectorResults .result .datasheet {
+	width: 117px;
+	text-align:center;
+	padding: 0 0 0 0;	
+}
+#productSelectorWrapper .selectorResults .result .msds {
+	width: 117px;
+	text-align:center;
+	padding: 0 5;	
+}
+#productSelectorWrapper .selectorResults .result td {
+	padding: 5px 5px !important;
+	font-size: 12px;
+	border-bottom: 1px solid #c4c4c4;
+}

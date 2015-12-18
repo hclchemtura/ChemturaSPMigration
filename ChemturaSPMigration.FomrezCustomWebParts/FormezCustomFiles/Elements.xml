@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="FormezCustomFiles" Url="Style Library">
+    <File Path="FormezCustomFiles\Styles\FomrezProducts.css" Url="FormezCustomFiles/Styles/FomrezProducts.css" Type="GhostableInLibrary" ReplaceContent="True"/>
+    <File Path="FormezCustomFiles\Scripts\jquery-1.7.2.min.js" Url="FormezCustomFiles/Scripts/jquery-1.7.2.min.js" Type="GhostableInLibrary" ReplaceContent="True"/>
+    <File Path="FormezCustomFiles\Scripts\jquery.selectbox-0.1.3.js" Url="FormezCustomFiles/Scripts/jquery.selectbox-0.1.3.js" Type="GhostableInLibrary" ReplaceContent="True"/>
+    <File Path="FormezCustomFiles\Styles\FomrezAppTypes.css" Url="FormezCustomFiles/Styles/FomrezAppTypes.css" Type="GhostableInLibrary" ReplaceContent="True"/>
+    <File Path="FormezCustomFiles\Styles\FomrezProdAppDetail.css" Url="FormezCustomFiles/Styles/FomrezProdAppDetail.css" Type="GhostableInLibrary" ReplaceContent="True"/>
+    <File Path="FormezCustomFiles\Styles\FomrezProdByAppType.css" Url="FormezCustomFiles/Styles/FomrezProdByAppType.css" Type="GhostableInLibrary" ReplaceContent="True"/>
+    <File Path="FormezCustomFiles\Images\sm_pdf.jpg" Url="FormezCustomFiles/Images/sm_pdf.jpg" Type="GhostableInLibrary" ReplaceContent="True"/>
+    <File Path="FormezCustomFiles\Images\adhesives.jpg" Url="FormezCustomFiles/Images/adhesives.jpg" Type="GhostableInLibrary" ReplaceContent="True"/>
+    <File Path="FormezCustomFiles\Images\castElastomers.jpg" Url="FormezCustomFiles/Images/castElastomers.jpg" Type="GhostableInLibrary" ReplaceContent="True"/>
+    <File Path="FormezCustomFiles\Images\Coatings.jpg" Url="FormezCustomFiles/Images/Coatings.jpg" Type="GhostableInLibrary" ReplaceContent="True"/>
+    <File Path="FormezCustomFiles\Images\Foam.jpg" Url="FormezCustomFiles/Images/Foam.jpg" Type="GhostableInLibrary" ReplaceContent="True"/>
+    <File Path="FormezCustomFiles\Images\Pigments.jpg" Url="FormezCustomFiles/Images/Pigments.jpg" Type="GhostableInLibrary" ReplaceContent="True"/>
+    <File Path="FormezCustomFiles\Images\TPU.jpg" Url="FormezCustomFiles/Images/TPU.jpg" Type="GhostableInLibrary" ReplaceContent="True"/>
+  </Module>
+</Elements>
