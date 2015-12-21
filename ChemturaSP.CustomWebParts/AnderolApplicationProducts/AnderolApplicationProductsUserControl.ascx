@@ -21,10 +21,10 @@
     <HeaderTemplate>
               <table>
               <tr>
-                 <th>Product</th>
-                 <th>Description</th>
-                  <th>Datasheet</th>
-                  <th>(M)SDS</th>
+                 <th class="product">Product</th>
+                 <th class="description">Description</th>
+                  <th class="datasheet">Datasheet</th>
+                  <th class="msds">(M)SDS</th>
               </tr>
           </HeaderTemplate>
 
