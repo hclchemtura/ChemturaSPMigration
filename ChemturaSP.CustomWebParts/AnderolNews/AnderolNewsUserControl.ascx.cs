@@ -42,12 +42,12 @@ namespace ChemturaSP.CustomWebParts.AnderolNews
 
                                 string URL = value.Url;
 
-                                litLib.Append("<div class='icon'>" +
+                                litLib.Append("<div class='libraryItem'> <div class='icon'>" +
                                     "<a title = " + row["Title"] + " href='" + URL + "' target='_blank'>"
                                     + "<img alt = '" + row["Title"] + "' src='/sites/anderol/corporatev2/chemturav8/layout/Anderol-en-US/icon_img.png' />" +
                                     "</a></div>" +
                                     "<div class='title'>" +
-                                    "<a title ='" + row["Title"] + "' href='" + URL + "' target='_blank'>" + row["Title"] + "</a>" + "<p>" + row["Description"] + "</p></div>");
+                                    "<a title ='" + row["Title"] + "' href='" + URL + "' target='_blank'>" + row["Title"] + "</a>" + "<p>" + row["Description"] + "</p></div></div>");
                             }
                         }
                     }

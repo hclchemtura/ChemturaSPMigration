@@ -25,14 +25,12 @@
                     <div class="leftNavFilterMenuWrapper">
                         <div class="leftNavFilterMenu">
                             <ul>
-                            </ul>
-                            &#160;
-                        </div>
-                        &#160;
+                            </ul>                            
+                        </div>                       
                     </div>
                 </div>
             </div>
-            &#160;
+          
         </div>
         <div class="region" id="region3">
             <div>
@@ -43,7 +41,7 @@
                 </div>
                 <div>
                     <div class="libraryWrapper" id="AnderolNews" runat="server">
-                       <!-- <div class="libraryItem">
+                        <!-- <div class="libraryItem">
                             <div class="icon">
                                 <a title="Anderol Grease Selection Guide" href="http://issuu.com/chemtura/docs/anderol_grease_selection_guide_-_2012?mode=window&amp;viewMode=doublePage" target="_blank">
                                     <img alt="Anderol Grease Selection Guide" src="/sites/anderol/corporatev2/chemturav8/layout/Anderol-en-US/icon_img.png" />
