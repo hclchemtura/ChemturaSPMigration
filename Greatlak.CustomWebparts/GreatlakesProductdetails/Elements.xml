@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="GreatlakesProductdetails" List="113" Url="_catalogs/wp">
+    <File Path="GreatlakesProductdetails\GreatlakesProductdetails.webpart" Url="Greatlakes.CustomWebparts_GreatlakesProductdetails.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="GreatLakes" />
+    </File>
+  </Module>
+</Elements>

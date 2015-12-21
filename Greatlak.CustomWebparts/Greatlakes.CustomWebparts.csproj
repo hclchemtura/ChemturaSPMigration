@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6F17815F-856D-48A5-929D-5D9AF127CDD6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Greatlak.CustomWebparts</RootNamespace>
+    <AssemblyName>Greatlak.CustomWebparts</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Recaptcha">
+      <HintPath>..\..\Recaptcha.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BromineProductFinder\BromineProductFinder.cs" />
+    <Compile Include="BromineProductFinder\BromineProductFinderUserControl.ascx.cs">
+      <DependentUpon>BromineProductFinderUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BromineProductFinder\BromineProductFinderUserControl.ascx.designer.cs">
+      <DependentUpon>BromineProductFinderUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUSWP\ContactUSWP.cs" />
+    <Compile Include="ContactUSWP\ContactUSWPUserControl.ascx.cs">
+      <DependentUpon>ContactUSWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUSWP\ContactUSWPUserControl.ascx.designer.cs">
+      <DependentUpon>ContactUSWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlameProductFinder\FlameProductFinder.cs" />
+    <Compile Include="FlameProductFinder\FlameProductFinderUserControl.ascx.cs">
+      <DependentUpon>FlameProductFinderUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FlameProductFinder\FlameProductFinderUserControl.ascx.designer.cs">
+      <DependentUpon>FlameProductFinderUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GreatlakesAppTypeProducts\GreatlakesAppTypeProducts.cs" />
+    <Compile Include="GreatlakesAppTypeProducts\GreatlakesAppTypeProductsUserControl.ascx.cs">
+      <DependentUpon>GreatlakesAppTypeProductsUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GreatlakesAppTypeProducts\GreatlakesAppTypeProductsUserControl.ascx.designer.cs">
+      <DependentUpon>GreatlakesAppTypeProductsUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GreatlakesIndustriesAppProduct\GreatlakesIndustriesAppProduct.cs" />
+    <Compile Include="GreatlakesIndustriesAppProduct\GreatlakesIndustriesAppProductUserControl.ascx.cs">
+      <DependentUpon>GreatlakesIndustriesAppProductUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GreatlakesIndustriesAppProduct\GreatlakesIndustriesAppProductUserControl.ascx.designer.cs">
+      <DependentUpon>GreatlakesIndustriesAppProductUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GreatlakesIndustriesApp\GreatlakesIndustriesApp.cs" />
+    <Compile Include="GreatlakesIndustriesApp\GreatlakesIndustriesAppUserControl.ascx.cs">
+      <DependentUpon>GreatlakesIndustriesAppUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GreatlakesIndustriesApp\GreatlakesIndustriesAppUserControl.ascx.designer.cs">
+      <DependentUpon>GreatlakesIndustriesAppUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GreatlakesNewsroom\GreatlakesNewsroom.cs" />
+    <Compile Include="GreatlakesNewsroom\GreatlakesNewsroomUserControl.ascx.cs">
+      <DependentUpon>GreatlakesNewsroomUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GreatlakesNewsroom\GreatlakesNewsroomUserControl.ascx.designer.cs">
+      <DependentUpon>GreatlakesNewsroomUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GreatlakesProductdetails\GreatlakesProductdetails.cs" />
+    <Compile Include="GreatlakesProductdetails\GreatlakesProductdetailsUserControl.ascx.cs">
+      <DependentUpon>GreatlakesProductdetailsUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GreatlakesProductdetails\GreatlakesProductdetailsUserControl.ascx.designer.cs">
+      <DependentUpon>GreatlakesProductdetailsUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GreatlakesResourceLib\GreatlakesResourceLib.cs" />
+    <Compile Include="GreatlakesResourceLib\GreatlakesResourceLibUserControl.ascx.cs">
+      <DependentUpon>GreatlakesResourceLibUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GreatlakesResourceLib\GreatlakesResourceLibUserControl.ascx.designer.cs">
+      <DependentUpon>GreatlakesResourceLibUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GreatlakesVideo\GreatlakesVideo.cs" />
+    <Compile Include="GreatlakesVideo\GreatlakesVideoUserControl.ascx.cs">
+      <DependentUpon>GreatlakesVideoUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GreatlakesVideo\GreatlakesVideoUserControl.ascx.designer.cs">
+      <DependentUpon>GreatlakesVideoUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BromineProductFinder\BromineProductFinder.webpart" />
+    <None Include="BromineProductFinder\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a5f61340-b6b5-4ba1-901c-8f88d8128edc}</SharePointProjectItemId>
+    </None>
+    <None Include="ContactUSWP\ContactUSWP.webpart" />
+    <None Include="ContactUSWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{89ddee21-e7c6-469b-a7e8-b8662c8cb0a8}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Greatlakes\Greatlakes.feature">
+      <FeatureId>{99d30c56-0464-4367-922a-6b52a8f70ffe}</FeatureId>
+    </None>
+    <None Include="FlameProductFinder\FlameProductFinder.webpart" />
+    <None Include="FlameProductFinder\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{dbb67549-570c-45b7-9ad4-65c3a3e33b25}</SharePointProjectItemId>
+    </None>
+    <None Include="GreatlakesAppTypeProducts\GreatlakesAppTypeProducts.webpart" />
+    <None Include="GreatlakesAppTypeProducts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0cc45ee3-5ecb-4924-8a5e-8a7340880b02}</SharePointProjectItemId>
+    </None>
+    <None Include="GreatlakesIndustriesAppProduct\GreatlakesIndustriesAppProduct.webpart" />
+    <None Include="GreatlakesIndustriesAppProduct\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0588fb3b-39e5-4b03-8ee1-d767633dde7a}</SharePointProjectItemId>
+    </None>
+    <None Include="GreatlakesIndustriesApp\GreatlakesIndustriesApp.webpart" />
+    <None Include="GreatlakesIndustriesApp\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{434b9227-b771-40c6-904f-2dd2b6e03053}</SharePointProjectItemId>
+    </None>
+    <None Include="GreatlakesNewsroom\GreatlakesNewsroom.webpart" />
+    <None Include="GreatlakesNewsroom\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fa85254d-81fc-45a3-b9cb-e34ffd323a84}</SharePointProjectItemId>
+    </None>
+    <None Include="GreatlakesProductdetails\GreatlakesProductdetails.webpart" />
+    <None Include="GreatlakesProductdetails\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1f8d086c-a70f-459b-9ad0-0d032e3004d5}</SharePointProjectItemId>
+    </None>
+    <None Include="GreatlakesResourceLib\GreatlakesResourceLib.webpart" />
+    <None Include="GreatlakesResourceLib\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a46126aa-dba6-4991-a0af-9de30afe5798}</SharePointProjectItemId>
+    </None>
+    <None Include="GreatlakesVideo\GreatlakesVideo.webpart" />
+    <None Include="GreatlakesVideo\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{510c910a-02ae-4761-a172-811b5ffcaf04}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{fcd66057-b71a-4ae1-81aa-67361534c88d}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="BromineProductFinder\BromineProductFinderUserControl.ascx" />
+    <Content Include="BromineProductFinder\Elements.xml" />
+    <Content Include="ContactUSWP\ContactUSWPUserControl.ascx" />
+    <Content Include="ContactUSWP\Elements.xml" />
+    <Content Include="Features\Greatlakes\Greatlakes.Template.xml">
+      <DependentUpon>Greatlakes.feature</DependentUpon>
+    </Content>
+    <Content Include="FlameProductFinder\Elements.xml" />
+    <Content Include="FlameProductFinder\FlameProductFinderUserControl.ascx" />
+    <Content Include="GreatlakesAppTypeProducts\Elements.xml" />
+    <Content Include="GreatlakesAppTypeProducts\GreatlakesAppTypeProductsUserControl.ascx" />
+    <Content Include="GreatlakesIndustriesAppProduct\Elements.xml" />
+    <Content Include="GreatlakesIndustriesAppProduct\GreatlakesIndustriesAppProductUserControl.ascx" />
+    <Content Include="GreatlakesIndustriesApp\Elements.xml" />
+    <Content Include="GreatlakesIndustriesApp\GreatlakesIndustriesAppUserControl.ascx" />
+    <Content Include="GreatlakesNewsroom\Elements.xml" />
+    <Content Include="GreatlakesNewsroom\GreatlakesNewsroomUserControl.ascx" />
+    <Content Include="GreatlakesProductdetails\Elements.xml" />
+    <Content Include="GreatlakesProductdetails\GreatlakesProductdetailsUserControl.ascx" />
+    <Content Include="GreatlakesResourceLib\Elements.xml" />
+    <Content Include="GreatlakesResourceLib\GreatlakesResourceLibUserControl.ascx" />
+    <Content Include="GreatlakesVideo\Elements.xml" />
+    <Content Include="GreatlakesVideo\GreatlakesVideoUserControl.ascx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

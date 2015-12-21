@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="GreatlakesResourceLibUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="GreatlakesResourceLib\" Type="ElementManifest" />
+    <ProjectItemFile Source="GreatlakesResourceLib.webpart" Target="GreatlakesResourceLib\" Type="ElementFile" />
+    <ProjectItemFile Source="GreatlakesResourceLibUserControl.ascx" Target="CONTROLTEMPLATES\Greatlak.CustomWebparts\GreatlakesResourceLib\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="Greatlak.CustomWebparts.GreatlakesResourceLib" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

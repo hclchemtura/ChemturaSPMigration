@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="GreatlakesAppTypeProductsUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="GreatlakesAppTypeProducts\" Type="ElementManifest" />
+    <ProjectItemFile Source="GreatlakesAppTypeProducts.webpart" Target="GreatlakesAppTypeProducts\" Type="ElementFile" />
+    <ProjectItemFile Source="GreatlakesAppTypeProductsUserControl.ascx" Target="CONTROLTEMPLATES\Greatlak.CustomWebparts\GreatlakesAppTypeProducts\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="Greatlak.CustomWebparts.GreatlakesAppTypeProducts" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

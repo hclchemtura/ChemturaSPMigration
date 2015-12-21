@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="BromineProductFinderUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="BromineProductFinder\" Type="ElementManifest" />
+    <ProjectItemFile Source="BromineProductFinder.webpart" Target="BromineProductFinder\" Type="ElementFile" />
+    <ProjectItemFile Source="BromineProductFinderUserControl.ascx" Target="CONTROLTEMPLATES\Greatlak.CustomWebparts\BromineProductFinder\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="Greatlak.CustomWebparts.BromineProductFinder" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="fcd66057-b71a-4ae1-81aa-67361534c88d" solutionId="fcd66057-b71a-4ae1-81aa-67361534c88d" resetWebServer="false" sharePointProductVersion="15.0" name="Greatlak.CustomWebparts" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="99d30c56-0464-4367-922a-6b52a8f70ffe" />
+  </features>
+</package>
