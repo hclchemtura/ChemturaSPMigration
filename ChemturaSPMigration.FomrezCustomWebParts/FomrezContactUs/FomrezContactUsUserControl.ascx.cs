@@ -15,81 +15,31 @@ namespace ChemturaSPMigration.FomrezCustomWebParts.FomrezContactUs
         {
             if (!IsPostBack)
             {
-                //GenrateCaptcha();
+                lblResult.Visible = false;
+                success.Visible = false;
+            }
+        }
+
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (!ReCaptcha.IsValid)
+                {
+                    lblResult.Visible = true;
+                    lblResult.Text = "Invalid Captcha Code!";
+                }
+                else
+                {
+                    contactForm.Visible = false;
+                    success.Visible = true;
+                }
+            }
+            catch (Exception ex)
+            {
             }
         }
         
-        protected void btnSubmit_Click(object sender, EventArgs e)
-        {
-            using (SPSite objSite = new SPSite(SPContext.Current.Site.Url))
-            {
-                using (SPWeb objWeb = objSite.OpenWeb())
-                {
-
-                    try
-                    {
-                        if (ReCaptcha.IsValid)
-                        {
-                            lblResult.Visible = false;
-                            objWeb.AllowUnsafeUpdates = true;
-                            objWeb.Update();
-                            SPList spList = objWeb.Lists["Contact Us"];
-
-                            SPListItem spListItem = spList.Items.Add();
-                            spListItem["Title"] = title.Text.ToString();
-                            spListItem["Name"] = name.Text.ToString();
-                            spListItem["Email"] = email.Text.ToString();
-                            spListItem["Company Name"] = company.Text.ToString();
-                            spListItem["Subject"] = subject.SelectedItem.ToString();
-                            spListItem["Message"] = message.Text.ToString();
-                            spListItem["Phone"] = phone.Text.ToString();
-                            spListItem.Update();
-                            objWeb.AllowUnsafeUpdates = false;
-                            ResetControls();
-                            //ScriptManager.RegisterClientScriptBlock(this.Page, this.Page.GetType(), "alerts", "alert('Query has been sent successfully.')", true);
-                        }
-                        else
-                        {
-                            lblResult.Visible = true;
-                            lblResult.Text = "Invalid Captcha Code!";
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                    }
-                }
-            }
-        }
-
-
-        //protected void GenrateCaptcha()
-        //{
-        //    const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-        //    var random = new Random();
-        //    string strCaptcha = new string(Enumerable.Repeat(chars, 7)
-        //      .Select(s => s[random.Next(s.Length)]).ToArray());
-        //    lblCaptcha.Text = strCaptcha;
-        //}
-
-
-
-
-        //protected void imgRefreshCaptcha_Click1(object sender, EventArgs e)
-        //{
-        //    GenrateCaptcha();
-        //}
-        protected void ResetControls()
-        {
-            title.Text = "";
-            name.Text = "";
-            company.Text = "";
-            phone.Text = "";
-            email.Text = "";
-            message.Text = "";
-            //txtCaptcha.Text = "";
-            subject.SelectedIndex = 0;
-            //GenrateCaptcha();
-        }
 
         protected void SendEmail()
         {
@@ -167,7 +117,7 @@ namespace ChemturaSPMigration.FomrezCustomWebParts.FomrezContactUs
 
             return sb1.ToString();
         }
-        
+
     }
 }
 

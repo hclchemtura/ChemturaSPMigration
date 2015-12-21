@@ -14,5 +14,6 @@
     <File Path="FormezCustomFiles\Images\Foam.jpg" Url="FormezCustomFiles/Images/Foam.jpg" Type="GhostableInLibrary" ReplaceContent="True"/>
     <File Path="FormezCustomFiles\Images\Pigments.jpg" Url="FormezCustomFiles/Images/Pigments.jpg" Type="GhostableInLibrary" ReplaceContent="True"/>
     <File Path="FormezCustomFiles\Images\TPU.jpg" Url="FormezCustomFiles/Images/TPU.jpg" Type="GhostableInLibrary" ReplaceContent="True"/>
+    <File Path="FormezCustomFiles\Scripts\ContactUs.js" Url="FormezCustomFiles/Scripts/ContactUs.js" Type="GhostableInLibrary" ReplaceContent="True"/>
   </Module>
 </Elements>

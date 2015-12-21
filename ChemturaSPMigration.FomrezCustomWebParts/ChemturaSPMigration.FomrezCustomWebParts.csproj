@@ -188,6 +188,7 @@
     <Content Include="FormezCustomFiles\Images\Pigments.jpg" />
     <Content Include="FormezCustomFiles\Images\sm_pdf.jpg" />
     <Content Include="FormezCustomFiles\Images\TPU.jpg" />
+    <Content Include="FormezCustomFiles\Scripts\ContactUs.js" />
     <Content Include="FormezCustomFiles\Scripts\jquery-1.7.2.min.js" />
     <Content Include="FormezCustomFiles\Scripts\jquery.selectbox-0.1.3.js" />
     <Content Include="FormezCustomFiles\Styles\FomrezProdByAppType.css" />

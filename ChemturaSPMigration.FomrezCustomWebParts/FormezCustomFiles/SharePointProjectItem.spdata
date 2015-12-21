@@ -15,5 +15,6 @@
     <ProjectItemFile Source="Images\Foam.jpg" Target="FormezCustomFiles\Images\" Type="ElementFile" />
     <ProjectItemFile Source="Images\Pigments.jpg" Target="FormezCustomFiles\Images\" Type="ElementFile" />
     <ProjectItemFile Source="Images\TPU.jpg" Target="FormezCustomFiles\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Scripts\ContactUs.js" Target="FormezCustomFiles\Scripts\" Type="ElementFile" />
   </Files>
 </ProjectItem>
